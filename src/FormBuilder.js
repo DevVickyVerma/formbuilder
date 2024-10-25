@@ -1,6 +1,7 @@
 import React, { Component, createRef } from "react";
 import $ from "jquery";
 import FormDataForm from "./FormDataForm";
+import MakeDynamicform from "./MakeDynamicform";
 
 // Make jQuery accessible globally
 window.jQuery = $;
@@ -110,7 +111,7 @@ class FormBuilder extends Component {
             <p>{error}</p>
           </div>
         ) : (
-          this.state.formData && <FormDataForm formData={this.state.formData} />
+          this.state.formData && <MakeDynamicform formDataList={this.state.formData} />
         )}
       </div>
     );

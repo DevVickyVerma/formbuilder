@@ -33,23 +33,7 @@ const renderFormElement = (formElement) => {
         ;
     case "select":
       return (
-        // <div key={name} className="row mb-3">
-        //   <div className="col-sm-6"></div>
-        //   <label className=" col-form-label">{label}</label>
-        //   <div className="">
-        //     <select name={name} className={`form-select ${className}`}>
-        //       {values.map((option, optionIndex) => (
-        //         <option
-        //           key={optionIndex}
-        //           value={option.value}
-        //           selected={option.selected}
-        //         >
-        //           {option.label}
-        //         </option>
-        //       ))}
-        //     </select>
-        //   </div>
-        // </div>
+
         <div className="card">
         <div className="card-body">
           <h5 className="card-title">{label}</h5>
