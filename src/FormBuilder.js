@@ -103,9 +103,17 @@ class FormBuilder extends Component {
   render() {
     const { error } = this.state;
     return (
-      <div>
-        <div id="fb-editor" ref={this.fb} />
-        <button className="btn btn-primary" onClick={this.getFormData}>Get Form Data</button>
+      <div className="p-3">
+        <div className="card">
+          <div className="card-body">
+            <div id="fb-editor" ref={this.fb} />
+            <button className="btn btn-primary mt-4" onClick={this.getFormData}>Get Form Data</button>
+
+          </div>
+
+
+        </div>
+
         {error ? (
           <div>
             <p>{error}</p>
@@ -113,6 +121,7 @@ class FormBuilder extends Component {
         ) : (
           this.state.formData && <MakeDynamicform formDataList={this.state.formData} />
         )}
+
       </div>
     );
   }

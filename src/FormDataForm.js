@@ -35,17 +35,17 @@ const renderFormElement = (formElement) => {
       return (
 
         <div className="card">
-        <div className="card-body">
-          <h5 className="card-title">{label}</h5>
-          <p className="card-text">
-            {values.map((option, optionIndex) => {
-              if(option.selected){
-                return(option.value)
-              }
-            })}  
-          </p>
+          <div className="card-body">
+            <h5 className="card-title">{label}</h5>
+            <p className="card-text">
+              {values.map((option, optionIndex) => {
+                if (option.selected) {
+                  return (option.value)
+                }
+              })}
+            </p>
+          </div>
         </div>
-      </div>
       );
     case "checkbox-group":
     case "radio-group":
@@ -69,17 +69,17 @@ const renderFormElement = (formElement) => {
         //   </div>
         // </div>
         <div className="card">
-        <div className="card-body">
-          <h5 className="card-title">{label}</h5>
-          <p className="card-text">
-            {values.map((option, optionIndex) => {
-              if(option.selected){
-                return(option.value)
-              }
-            })}  
-          </p>
+          <div className="card-body">
+            <h5 className="card-title">{label}</h5>
+            <p className="card-text">
+              {values.map((option, optionIndex) => {
+                if (option.selected) {
+                  return (option.value)
+                }
+              })}
+            </p>
+          </div>
         </div>
-      </div>
       );
     case "file":
     case "number":
@@ -101,19 +101,19 @@ const renderFormElement = (formElement) => {
         //     )}
         //   </div>
         // </div>
-        <div className="card">    
-        <div className="card-body">
-          <h5 className="card-title">{label}</h5>
-          <p className="card-text">
-          {type === "file" ? (
-              <img src={value} />
-            ) : (
-              value
-            )
-          } 
-          </p>
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title">{label}</h5>
+            <p className="card-text">
+              {type === "file" ? (
+                <img src={value} />
+              ) : (
+                value
+              )
+              }
+            </p>
+          </div>
         </div>
-      </div>
       );
     case "text":
       return (
@@ -137,14 +137,14 @@ const renderFormElement = (formElement) => {
           </div>
         </div>
       );
-    case "date" :
+    case "date":
       return (
         <div className="card">
-        <div className="card-body">
-          <h5 className="card-title">{label}</h5>
-          <p className="card-text">{value}</p>
+          <div className="card-body">
+            <h5 className="card-title">{label}</h5>
+            <p className="card-text">{value}</p>
+          </div>
         </div>
-      </div>
       )
     // Handle other form element types as needed
     default:

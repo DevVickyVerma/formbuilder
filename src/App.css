@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -45,3 +46,15 @@
   align-items: center;
   padding: 40px;
 }
+
+.c-form-continer {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.c-form-sub-continer {
+  width: 700px;
+  margin-top: 2rem;
+
+}
+
